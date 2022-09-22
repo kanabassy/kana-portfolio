@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanaPortfolio</title>
+    <!-- Webfonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos.css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- aos.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- iScroll.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    
+    <!-- common.js の読み取り  必ずjQeryのあとに -->
+    <script src="./js/common.js"></script>
+</head>
+
+<body class="drawer drawer--right">
+    <!-- <header>
+        <div class="header">
+            <nav>
+                <ul class="header-nav">
+                    <li class="header-nav__link"><a href="">HOME</a></li>
+                    <li class="header-nav__link"><a href="#concept">CONCEPT</a></li>
+                    <li class="header-nav__link"><a href="#about">ABOUT</a></li>
+                    <li class="header-nav__link"><a href="#works">WORKS</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header> -->
+    <header>
+        <div class="sp-header">
+            <div class="humberger drawer-toggle drawer-hamburger">
+                <span class="drawer-hamburger-icon"></span>
+            </div>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-menu-item" href="#">TOP</a></li>
+                    <li><a class="drawer-menu-item" href="#concept">CONCEPT</a></li>
+                    <li><a class="drawer-menu-item" href="#about">ABOUT</a></li>
+                    <li><a class="drawer-menu-item" href="#works">WORKS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="over-flow"> 
+            <div class="title-box">
+                <h1 class="site-title">KANA<span class="chenge">'S</span><br>PORTFOLIO</h1>
+            </div>
+            <div class="section concept" id="concept">
+                <div class="section-headline">
+                    <h2 class="section-title">CONCEPT</h2>
+                </div>
+                <div class="concept">
+                    <img class="concept__img" data-aos="fade-right" data-aos-duration="2000"
+                    data-aos-easing="ease-in-sine" src="./img/yasai.jpg" alt="">
+                    <div class="concept-wrap">
+                        <h3 class="concept__headline" data-aos="fade-left" data-aos-duration="2000"
+                        data-aos-easing="ease-in-sine">『思いを形に、実になるまで』</h3>
+                        <p class="concept__text" data-aos="fade-left" data-aos-duration="2000"
+                        data-aos-easing="ease-in-sine">家族で野菜を育てつつ、フリーランスでweb制作をしています。<br>
+                            一つの野菜を収穫するまで、土を耕し、種をまき、水を与え、栄養を与え、芽吹き、葉が育ちやがて花が咲き、実を結びます。
+                            手をかければかけるほど瑞々しく、おいしい野菜に育ちます。<br>
+                            お客様の思い（種）を受け取り、ご依頼いただいたWebサイトやサービスが花を咲かせ実を結ぶように、
+                            一つの野菜を育てるような、丁寧なWeb制作を行います。<br>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUTセクション -->
+        <section class="over-flow">
+            <div class="section about" id="about">
+                <div class="section-headline">
+                    <h2 class="section-title">ABOUT</h2>
+                </div>
+                <div class="profile">
+                    <img class="profile__img" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-sine" src="./img/kanagon.jpg" alt="">
+                    <div class="profile-wrap">
+                        <article>
+                            <div class="profile-content">
+                                <h3 class="profile-content__headline" data-aos="fade-right" data-aos-duration="1500"
+                                data-aos-easing="ease-in-sine">イシバシ  カナ</h3>
+                                <span class="profile-content__tab" data-aos="fade-right" data-aos-duration="1500"
+                                data-aos-easing="ease-in-sine">Ishibashi Kana</span>
+                                <p class="profile-content__text" data-aos="fade-right" data-aos-duration="1500"
+                                data-aos-easing="ease-in-sine">熊本県八代市在住、2児の母。<br>
+                                    農家に嫁ぎ、家族で野菜を育てています。<br>
+                                    プログラミングに興味があり、2021年4月よりプログラミングの勉強を始めました。<br>
+                                    子育てしながらどこでも働けるWebデザインのお仕事をしたく、デザインも勉強中。<br>
+                                    以前は医療関係・教育関係のお仕事をしていました。<br>
+                                    休日は子どもたちと犬の散歩をしてのんびり過ごしています。
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="profile-content">
+                                <h3 class="profile-content__headline" data-aos="fade-right" data-aos-duration="1500"
+                                data-aos-easing="ease-in-sine">できること・やりたいこと</h3>
+                                <span class="profile-content__tab" data-aos="fade-right" data-aos-duration="1500"
+                                data-aos-easing="ease-in-sine">I can do  ・  I wanna do</span>
+                                <p class="profile-content__text" data-aos="fade-right" data-aos-duration="1500"
+                                data-aos-easing="ease-in-sine">HTML / CSS / Illustrator / Photoshop<br>
+                                Illustrator、Photoshopを使ってグラフィックデザインも作成いたします。<br>
+                                Wordpressの基本的な操作もできます。簡単なWebサイトは作れます！<br>
+                                コーディング面は、スピーディーに、見やすいコードが書けるようになりたいです。<br>
+                                DB / SQL /PHP 勉強中です。<br>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WORKSセクション -->
+    <section>
+        <div class="section works" id="works">
+            <div class="section-headline">
+                <h2 class="section-title">WORKS</h2>
+            </div>
+            <div class="works-wrap">
+                <article>
+                    <div class="works-content">
+                        <h3 class="works-content__title">Web制作</h3>
+                        <img class="works-content__img" src="./img/web-img.jpg" alt="">
+                        <!-- <img class="works-content__bgcimg" src="./img/works-bgcimg.jpg" alt=""> -->
+                    </div>
+                </article>
+                <article>
+                    <div class="works-content">
+                        <h3 class="works-content__title">フライヤー制作</h3>
+                        <img class="works-content__img" src="./img/flyer-img.jpg" alt="">
+                    </div>
+                </article>
+                <article>
+                    <div class="works-content">
+                        <h3 class="works-content__title">名刺制作</h3>
+                        <img class="works-content__img" src="./img/namecard-img.jpg" alt="">
+                    </div>
+                </article>
+            </div>
+            <a href="works.html" class="btn">もっと見る</a>
+            <p class="works-text">HPの制作（WordPress使用もできます）や、イベント等のフライヤー、名刺の制作等を行っています。お気軽にお問い合わせください。<br>
+                Twitterで日常をつぶやいています。お仕事のご相談は、ダイレクトメールでもできます！</p>
+            <div class="sns-link">
+                <a href="https://twitter.com/k_bassy110202" class="sns-link__icon"><i class="fab fa-twitter fa-2x fa-spin"></i></a>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyrights">KANA'S PORTFOLIO © All Rights Reserved</p>
+    </footer>
+
+
+</body>
+
+</html>

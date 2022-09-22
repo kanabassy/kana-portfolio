@@ -1,0 +1,72 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+// 見出し
+.section{
+    padding-top: 64px;
+    padding-bottom: 160px;
+    @include mq(sp){
+        margin-top: initial;
+        padding-bottom: initial;
+    }
+}
+.section-title{
+    color: $accent;
+    font-family: $mont;
+    padding-top: 64px;
+    @include mq(sp){
+        padding-top: initial;
+    }
+}
+.section-headline {
+    padding-top: 64px;
+    padding-bottom: 128px;
+    text-align: center;
+    @include mq(sp){
+        padding-bottom: 64px;
+    }
+}
+
+.btn {
+    border: 1px solid $accent;
+    background-color: $accent;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $mont;
+    height: 48px;
+    width: 216px;
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: all .8s ease;
+    // ボタンのアニメーション
+    &:hover {
+        background-color: #ffffff;
+        border: none;
+        color: $accent;
+    }
+
+    &::after {
+        content: "";
+        border: 1px solid $accent;
+        height: 48px;
+        width: 216px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        z-index: 0;        
+    }
+
+    &:hover::after {
+        top: 0;
+        left: 0;
+    }
+}
+
+.over-flow{
+    overflow: hidden;
+}
+

@@ -1,0 +1,53 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+// ここからheader
+// .header{
+//     width: 100vw;
+//     height: 80px;
+//     position: fixed;
+//     padding: 20px 40px;
+//     z-index: 2;
+//     &-nav{
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         padding: 13px 40px;
+//         &__link {
+//             color: $accent;
+//             font-size: 14px;
+//             font-weight: bold;
+//         }
+//     }
+//     // スマホ非表示
+//     @include mq(sp){
+//         display: none;
+//     }
+// }
+
+.sp-header{
+    // display: none;
+    // @include mq(sp){
+        // background-color: ;
+        // box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+        height: 60px;
+        width: 100vw;
+        padding: 0 20px;
+        position: fixed;
+        display: flex;
+        align-items:center;
+        // justify-content: space-between;
+        z-index: 2;
+        .humberger{
+            display: flex;
+            flex-flow: column;
+            row-gap: 10px;
+
+            &__border{
+                background-color: $accent;
+                height: 2px;
+                width: 32px;
+            }
+        }
+    // }
+}
