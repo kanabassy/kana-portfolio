@@ -525,27 +525,21 @@ li {
   h2 {
     font-size: 24px;
   }
-
   h3 {
     font-size: 20px;
   }
-
   h4 {
     font-size: 14px;
   }
-
   p {
     font-size: 14px;
   }
-
   span {
     font-size: 12px;
   }
-
   .pc-none {
     display: block;
   }
-
   .mobile-none {
     display: none;
   }
@@ -741,6 +735,10 @@ li {
     row-gap: 30px;
   }
 }
+.works-content {
+  display: flex;
+  flex-direction: column;
+}
 .works-content__title {
   font-family: "Noto Sans JP";
   font-size: 18px;
@@ -754,6 +752,12 @@ li {
 }
 .works-content__img:hover {
   transform: scale(1.2);
+}
+.works-content__link {
+  font-family: "Montserrat";
+}
+.works-content__link:hover {
+  color: #f3a7ac;
 }
 .works-text {
   font-size: 16px;
@@ -782,14 +786,13 @@ li {
 }
 .works .sns-link {
   display: flex;
+  justify-content: center;
 }
 .works .sns-link__icon {
   color: #f3a7ac;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 56px;
-  width: 100vw;
   margin-bottom: 40px;
 }
 

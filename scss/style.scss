@@ -171,6 +171,9 @@
         }
     }
     &-content {
+        display: flex;
+        flex-direction: column;
+
         &__title {
             font-family: $sans;
             font-size: 18px;
@@ -187,6 +190,15 @@
 
             &:hover{
                 transform: scale(1.2);
+            }
+        }
+
+        &__link {
+            font-family: $mont;
+            
+
+            &:hover{
+                color: $accent;
             }
         }
 
@@ -222,15 +234,15 @@
     }
     .sns-link {
         display: flex;
+        justify-content: center;
         &__icon {
             color: $accent;
             // background-color: $white;
             // color: $black;
             display: flex;
             align-items: center;
-            justify-content: center;
+            //justify-content: center;
             height: 56px;
-            width: 100vw;
             // border-radius: 50%;
             margin-bottom: 40px;
             
