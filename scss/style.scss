@@ -157,9 +157,25 @@
     background-color: $main;
     padding-top: 0;
 
-    &-wrap {
+    &-container {
         max-width: 1080px;
         margin: 0 auto ;
+        @include mq(sp){
+            max-width: initial;
+            padding: 0 20px;
+        }
+    }
+    &-area{
+        margin-bottom: 80px;
+        
+        &__title{
+            font-size: 18px;
+        }
+    }
+
+    &-wrap {
+        // max-width: 1080px;
+        // margin: 0 auto ;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -179,21 +195,34 @@
             font-size: 18px;
         }
 
+        &__bgcimg{
+            // width: 500px;
+            // height: 375px;
+            overflow: hidden;
+        }
+
         &__img {
-            height: 225px;
-            width: 300px;
+            width: 500px;
+            height: auto;
             display: inline-block;
             margin-top: 24px;
             transition: all .8s ease;
+            @include mq(sp){
+                height: auto;
+                width: 300px;
+                display: inline-block;
+            }
 
             // 写真の拡大
 
             &:hover{
-                transform: scale(1.2);
+                transform: scale(1.1);
+                opacity: 0.8;
             }
         }
 
         &__link {
+            margin-top: 16px;
             font-family: $mont;
             
 
@@ -201,13 +230,6 @@
                 color: $accent;
             }
         }
-
-        // &__bgcimg{
-        //     height: 225px;
-        //     width: 300px;
-        //     display: inline-block;
-        //     position: absolute;
-        // }
     }
 
     &-text {
@@ -256,7 +278,6 @@
     
         // }
     }
-   
 }
 
 
