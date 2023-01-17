@@ -820,6 +820,8 @@ li {
   align-items: center;
   height: 56px;
   margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer {
